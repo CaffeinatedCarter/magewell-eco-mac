@@ -1,0 +1,34 @@
+
+What's here
+===========
+Quick start with the official Eco Capture Series Card Driver
+on Linux.
+
+
+Install
+===========
+Open a terminal then execute the installation script:
+	$ cd <path-to-package-base-directory>
+	$ ./install.sh
+  
+After a successful installation, you should see something similar to:
+
+#########################################################
+Install Successfully!
+#########################################################
+
+If you get an unexpected failure when executing the installation script,
+consult the documents under docs directory for more help.
+
+
+Device info
+===========
+To get information of Eco Capture Card device, you can execute:
+	$ mweco-info
+
+
+Play with MPlayer(MPlayer must already be installed)
+===========
+After a successful driver installation, you can start a capture using MPlayer:
+	$ mplayer tv:// -tv driver=v4l2
+
